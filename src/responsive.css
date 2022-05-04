@@ -1,0 +1,77 @@
+/*  Mobile & Tablet */
+@media (max-width: 63.9375em) {
+
+    .use-mobile {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #header-mobile {
+        display: grid;
+        justify-items: center;
+        padding: 0 12px;
+        margin: 20px 0;
+        justify-content: center;
+
+
+
+    }
+
+}
+
+/* Tablet: min-width >= 740px and max-width < 1023px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .admin {
+        display: block;
+    }
+
+    .admin>ul {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .admin>ul>li {
+        margin-bottom: 0;
+    }
+
+    .admin>ul>li>a {
+        font-size: 20px;
+    }
+}
+
+/* Mobile: max-width < 739px */
+@media only screen and (max-width: 46.1875em) {
+    #fuji-mobile {
+        margin-bottom: 20px;
+    }
+
+    #one-element-mobile {
+        margin: 20px 0;
+    }
+
+    .product-card-mobile {
+        display: unset;
+    }
+
+    .img-mobile {
+        object-fit: cover;
+    }
+
+    .admin {
+        display: block;
+    }
+
+    .admin>ul {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .admin>ul>li {
+        margin-bottom: 0;
+    }
+
+    .admin .logo-admin>img {
+        height: 100%;
+    }
+}

@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(149, 148, 140);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+.product-card-mobile {
+  text-align: center;
+}
+
+.use-mobile {
+  display: flex;
+  align-items: center;
+
+  &>button {
+    margin: 0 12px;
+  }
+}
+
+.card-product-item {
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.fix-a {
+  margin-top: 20px;
+}
+
+.fs-h2 {
+  font-size: 25px;
+}
+
+.title-contact {
+  margin-bottom: 30px;
+}
+
+.product-card-mobile {
+
+  .card-product-image {
+    overflow: hidden;
+
+    &>img {
+      transform: scale(1);
+      transition: all 0.5s;
+    }
+  }
+
+  &:hover .card-product-image>img {
+    transform: scale(1.1);
+  }
+}
+
+.review-item {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  left: 0;
+}
+
+.product-detail {
+  margin: 30px 0 20px 0;
+}
+
+.des-product {
+  margin: 30px 0 20px 0;
+}
+
+.admin {
+  display: flex;
+
+  &>ul {
+    list-style: none;
+    width: 30%;
+    margin-bottom: 0;
+    background-color: #304156;
+
+    &>li {
+      margin-bottom: 10px;
+      text-align: center;
+
+      &>button {
+        outline: none;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        padding: 5px 15px;
+        border-radius: 2px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #999;
+        color: #fff;
+        transition: all 0.2s;
+        margin-top: 20px;
+
+        &:hover {
+          background-color: #daa785;
+          border-color: #daa785;
+        }
+      }
+
+      &>a {
+        display: block;
+        color: #e4cdcd;
+        font-size: 16px;
+        padding: 20px;
+        font-weight: 500;
+        transition: all 0.2s;
+
+        &:hover {
+          color: #fff;
+          background-color: #333;
+        }
+      }
+    }
+  }
+
+  .logo-admin {
+    width: 100%;
+    overflow: hidden;
+
+    &>img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      transform: scale(1);
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(1.1)
+      }
+    }
+  }
+}
